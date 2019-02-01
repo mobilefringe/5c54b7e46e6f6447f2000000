@@ -26,7 +26,7 @@
                     <a :href="item.link" target="_blank">
                         <div class="insta-feed-background" v-bind:style="{ backgroundImage: 'url(' + item.images.standard_resolution.url + ')' }"></div>
                         <div class="insta_content">
-                            <div class="insta_caption">
+                            <div class="insta_caption" v-if="item.caption && item.caption.text">
                                 <p>{{ _.truncate(item.caption.text,{'length':75}) }}</p>
                                 <div>
                                     <span>
