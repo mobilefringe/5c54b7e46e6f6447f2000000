@@ -131,7 +131,7 @@
                     _.forEach(features, function(value, key) {
                       
                         if( _.includes([4,5], key) ) {
-                            value.masonry_class = "grid-item--height2 grid-item--width2";
+                            value.masonry_class = "grid-item--height2";
                             value.image_url = "https://picsum.photos/570/1140?image=98"+key;
                         }
                         else if ( _.includes([0,1], key) ){
