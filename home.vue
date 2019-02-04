@@ -136,7 +136,7 @@
                         }
                         else if ( _.includes([0,1], key) ){
                             value.masonry_class = "grid-item--width2";
-                            // value.image_url = "https://picsum.photos/1140/570?image=97"+key;
+                            value.image_url = "https://picsum.photos/1140/570?image=97"+key;
                         }
                         else {
                             value.masonry_class = " ";
