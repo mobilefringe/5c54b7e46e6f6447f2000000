@@ -25,9 +25,9 @@
         "id": "promos_link"
     },
     {
-        "name": "header.hours",
-        "href": "/hours",
-        "id": "hours_link"
+        "name": "header.news_events",
+        "href": "/events",
+        "id": "events_link"
     },
     {
         "name": "header.services",
@@ -66,8 +66,8 @@
         ]
     },
     {
-        "name": "header.news_events",
-        "href": "/events",
-        "id": "events_link"
+        "name": "header.hours",
+        "href": "/hours",
+        "id": "hours_link"
     }
 ]
