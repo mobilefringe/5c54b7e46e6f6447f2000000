@@ -82,7 +82,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             return {
                 dataLoaded: false,
                 show_mobile_menu: false,
-                property_logo: "//codecloud.cdn.speedyrails.net/sites/5c17f84d6e6f643522450000/image/png/1545071987721/logo.png",
+                property_logo: "//codecloud.cdn.speedyrails.net/sites/5c54b7e46e6f6447f2000000/image/png/1549056394014/new_sudbury_transparent.png",
                 menu_items: MenuItems,
                 search_result : null,
                 suggestionAttribute: 'name',
