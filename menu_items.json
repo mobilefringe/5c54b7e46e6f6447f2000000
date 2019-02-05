@@ -36,8 +36,8 @@
         "id": "services_link",
         "sub_menu": [
             {
-                "name": "header.accessibility",
-                "href": "/pages/sudburycentre-accessibility"
+                "name": "header.customer_service",
+                "href": "/pages/sudburycentre-customer-service"
             },
             {
                 "name": "header.accessibility",
