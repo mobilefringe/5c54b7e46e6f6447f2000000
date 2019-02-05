@@ -120,10 +120,6 @@
                     if (this.currentPost === null || this.currentPost === undefined) {
                         this.$router.replace({ name: '404' });
                     }
-                },
-                shareURL(slug) {
-                    var share_url = "https://www.bramaleacitycentre.com/posts/" + slug
-                    return share_url
                 }
             }
         });
