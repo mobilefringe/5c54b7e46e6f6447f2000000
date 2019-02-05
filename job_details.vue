@@ -166,11 +166,7 @@
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
-                },
-                shareURL(slug){
-                    var share_url = "https://www.eastyorkshops.com/jobs/" + slug;
-                    return share_url;
-                },
+                }
             }
         });
     });
