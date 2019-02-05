@@ -21,7 +21,7 @@
             <div>
 		      <h3 class="home_page_title caps">{{$t("home_page.our_feed")}}</h3>
 		    </div>
-		    <div class="insta-feed-container">
+		    <div class="insta-feed-container" v-if="instaFeed && instaFeed.length > 0">
                 <div class="insta-feed-image " v-for="(item, index) in instaFeed">
                     <a :href="item.link" target="_blank">
                         <div class="insta-feed-background" v-bind:style="{ backgroundImage: 'url(' + item.images.standard_resolution.url + ')' }"></div>
