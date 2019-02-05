@@ -147,10 +147,6 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                shareURL(slug){
-                    var share_url = "https://www.eastyorkshops.com/jobs/" + slug;
-                    return share_url;
-                },
                 loadMoreItems() {
                   if (this.showMore <= this.promos.length) {
                     var num = this.showMore + this.incrementBy;
