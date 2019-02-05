@@ -25,11 +25,6 @@
         "id": "promos_link"
     },
     {
-        "name": "header.news_events",
-        "href": "/events",
-        "id": "events_link"
-    },
-    {
         "name": "header.hours",
         "href": "/hours",
         "id": "hours_link"
@@ -69,5 +64,10 @@
                 "href": "/jobs"
             }
         ]
+    },
+    {
+        "name": "header.news_events",
+        "href": "/events",
+        "id": "events_link"
     }
 ]
