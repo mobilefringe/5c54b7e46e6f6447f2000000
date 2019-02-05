@@ -94,6 +94,10 @@
                         this.pageBanner.image_url = "";
                     }
                 });
+                this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "	/pages/"+this.$root.subdomain+"-contact-us.json"}).then(response => {
+                    this.currentPage = response[0].data;
+                    
+                });
             },
             mounted () {
                 //creating random validation num 
