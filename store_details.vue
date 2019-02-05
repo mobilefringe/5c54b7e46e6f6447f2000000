@@ -15,6 +15,7 @@
 						<!--<img v-lazy="currentStore.store_front_url_abs" class="image"/>-->
 						<div v-if="currentStore.no_store_logo" class="store_details_image center-block">
                             <div class="no_logo">
+                                <img class="store_img" src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" alt="">
                                 <h2 class="store_details_name">{{ currentStore.name }}</h2>
                             </div>    
                         </div>
