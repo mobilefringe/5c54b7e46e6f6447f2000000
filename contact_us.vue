@@ -61,7 +61,7 @@
             <div style="padding-top: 40px;"></div>    
         </div>
         <div style="margin-bottom:-30px">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1234.5887233230621!2d-79.3461581825161!3d43.70531345482354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ccfb4f9d01f3%3A0xf925df5c38dba5e5!2sEast+York+Town+Centre!5e0!3m2!1sen!2sca!4v1545169043397" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21962.843884082038!2d-80.946021!3d46.52086700000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2f009c298d2b89%3A0x3406bb16697f5ee6!2s1349+Lasalle+Blvd%2C+Sudbury%2C+ON+P3A+1Z2%2C+Canada!5e0!3m2!1sen!2sus!4v1549389629749" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 </template>
