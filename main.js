@@ -96,7 +96,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             this.loadData().then(response => {
                 this.dataLoaded = true;
                 this.locale = "en-ca";
-                this.property.default_logo_url = "http://via.placeholder.com/600/000/ccc";
+                this.property.default_logo_url = "//codecloud.cdn.speedyrails.net/sites/5c54b7e46e6f6447f2000000/image/jpeg/1549475208485/new_sudbury_black.jpg";
                 
             });
             window.addEventListener('scroll', this.enableStickyNavbar);
@@ -195,7 +195,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
             },
             shareURL(page,slug){
                 console.log("page, slug", page, slug)
-                var share_url= "httpa://www.newsudburycentre.ca/" + page + "/" + slug;
+                var share_url= "http://www.newsudburycentre.ca/" + page + "/" + slug;
                 return share_url;
             },
         },
