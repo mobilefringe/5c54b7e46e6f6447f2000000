@@ -19,7 +19,9 @@
             		<div class="row event_container" v-if="showMore > index" v-for="(promo,index) in promos">				
             		    <div class="col-sm-6 col-md-4 event_image_container">
 							<!--<router-link :to="'/events/'+ promo.slug" class="event_learn_more">-->
-							<img :src="promo.store.store_front_url_abs"  class="event_image image" :alt="'Click here to view ' + promo.name"/>
+							<div>
+							    <img :src="promo.store.store_front_url_abs"  class="event_image image" :alt="'Click here to view ' + promo.name"/>
+							</div>
 							<!--</router-link>-->
 						</div>
 						<div class="col-sm-6 col-md-8 event_dets_container">
