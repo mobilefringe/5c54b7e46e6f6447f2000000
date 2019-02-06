@@ -21,10 +21,10 @@
 						<div v-if="currentPromo.store.no_store_logo" class="store_details_image center-block">
                             <div class="no_logo">
                                 <img class="store_img" src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" alt="">
-                                <h2 class="store_details_name">{{ currentPromo.store..name }}</h2>
+                                <h2 class="store_details_name">{{ currentPromo.store.name }}</h2>
                             </div>    
                         </div>
-                        <img v-else class="store_details_image center-block" :src="currentStore.store_front_url_abs" :alt="currentStore.name + ' Logo'" />
+                        <img v-else class="store_details_image center-block" :src="currentPromo.store..store_front_url_abs" :alt="currentStore.name + ' Logo'" />
 					</div>
 					<div class="text-center">
 					    <div v-if="currentPromo.promotionable_type == 'Store'">
