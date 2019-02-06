@@ -57,8 +57,8 @@
 					<div class="store_promo_container" v-if="promotions.length > 0">
 						<div class="promo_container_title text-left caps"></div>
 						<h4 class="store_dets_title caps margin_30">{{$t("promos_page.promotions")}}</h4>
-						<div class="row store_promo_dets text-left" v-for="promo in promotions">
-							<div class="col-sm-6 no_padding" >
+						<div class="row store_promo_dets text-left" >
+							<div class="col-sm-6 no_padding" v-for="promo in promotions">
 								<div class="promo_div_image text-center">
 									<img v-lazy="checkImageURL(promo)" class="image" alt=""/>
 								</div>
