@@ -119,7 +119,7 @@
                             // this.currentPromo.store.store_front_url_abs = this.property.default_logo_url;
                             this.currentStore.no_store_logo = true;
                         }
-                        else if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
+                        else if (!this.currentPromo.store) {
                             this.currentPromo.store = {};
                             this.currentPromo.store.store_front_url_abs = this.property.default_logo_url;
                         }
