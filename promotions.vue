@@ -143,7 +143,7 @@
                             }
                             else if (!value.store) {
                                 value.store = {};
-                                value.store.store_front_url_abs = this.property.default_logo_url;
+                                value.store.store_front_url_abs = vm.property.default_logo_url;
                             }
                             temp_promo.push(value);
                         }
