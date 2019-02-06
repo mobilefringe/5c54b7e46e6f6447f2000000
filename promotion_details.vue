@@ -24,7 +24,7 @@
                                 <h2 class="store_details_name">{{ currentPromo.store.name }}</h2>
                             </div>    
                         </div>
-                        <img v-else class="store_details_image center-block" :src="currentPromo.store.store_front_url_abs" :alt="currentStore.name + ' Logo'" />
+                        <img v-else class="store_details_image center-block" :src="currentPromo.store.store_front_url_abs" :alt="currentStore.store.name + ' Logo'" />
 					</div>
 					<div class="text-center">
 					    <div v-if="currentPromo.promotionable_type == 'Store'">
