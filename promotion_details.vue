@@ -116,7 +116,8 @@
                 currentPromo : function (){
                     if(this.currentPromo != null) {
                         if (this.currentPromo.store  && _.includes(this.currentPromo.store.store_front_url_abs, 'missing')) {
-                            this.currentPromo.store.store_front_url_abs = this.property.default_logo_url;
+                            // this.currentPromo.store.store_front_url_abs = this.property.default_logo_url;
+                            this.currentStore.no_store_logo = true;
                         }
                         else if (this.currentPromo.store == null || this.currentPromo.store == undefined) {
                             this.currentPromo.store = {};
