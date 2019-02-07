@@ -131,12 +131,20 @@
                             value.description_short_2 = _.truncate(value.description_2, {
                                 'length': 150
                             });
-                            if (value.store != null && value.store != undefined && _.includes(value.store.store_front_url_abs, 'missing')) {
-                                value.store.store_front_url_abs = vm.property.default_logo_url;
+                            // if (value.store != null && value.store != undefined && _.includes(value.store.store_front_url_abs, 'missing')) {
+                            //     value.store.store_front_url_abs = vm.property.default_logo_url;
+                            // }
+                            // else if (value.store == null || value.store == undefined) {
+                            //     value.store = {};
+                            //     value.store.store_front_url_abs =  vm.property.default_logo_url;
+                            // }
+                            if (value.store  && _.includes(value.store.store_front_url_abs, 'missing')) {
+                                // this.currentPromo.store.store_front_url_abs = this.property.default_logo_url;
+                                value.store.no_store_logo = true;
                             }
-                            else if (value.store == null || value.store == undefined) {
+                            else if (!value.store) {
                                 value.store = {};
-                                value.store.store_front_url_abs =  vm.property.default_logo_url;
+                                value.store.store_front_url_abs = vm.property.default_logo_url;
                             }
                             temp_promo.push(value);
                         }
