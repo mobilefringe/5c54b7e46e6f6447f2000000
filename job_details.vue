@@ -45,6 +45,10 @@
 					<h3 class="promo_name" style="margin: 20px auto 0px;" v-if="locale=='en-ca'">{{currentJob.name}}</h3>
 					<h3 class="promo_name" style="margin: 20px auto 0px;" v-else>{{currentJob.name_2}}</h3>
 					<div class="row">
+					    <div v-if="currentPromo.promotionable_type == 'Store'" class="visible_phone">
+    					    <h4 class="event_store_name caps" v-if="locale=='fr-ca'">{{currentPromo.store.name_2}}</h4>
+    					    <h4 class="event_store_name caps" v-else>{{currentPromo.store.name}}</h4>
+    					</div>
 						<p class="promo_div_date pull-left">{{currentJob.start_date | moment("MMM D", timezone)}} - {{currentJob.end_date | moment("MMM D", timezone)}}</p>
 						<social-sharing :url="$root.shareURL('jobs',currentJob.slug)" :title="currentJob.title" :description="currentJob.body" :quote="_.truncate(currentJob.description, {'length': 99})" twitter-user="BCCstyle" :media="currentJob.image_url" inline-template >
 							<div class="blog-social-share pull-right" style="margin: 15px auto;">
