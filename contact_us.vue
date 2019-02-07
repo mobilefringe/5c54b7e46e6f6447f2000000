@@ -60,7 +60,7 @@
         	
             <div style="padding-top: 40px;"></div>    
         </div>
-        <div style="margin-bottom:-30px">
+        <div style="margin-bottom:-40px">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21962.843884082038!2d-80.946021!3d46.52086700000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2f009c298d2b89%3A0x3406bb16697f5ee6!2s1349+Lasalle+Blvd%2C+Sudbury%2C+ON+P3A+1Z2%2C+Canada!5e0!3m2!1sen!2sus!4v1549389629749" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
