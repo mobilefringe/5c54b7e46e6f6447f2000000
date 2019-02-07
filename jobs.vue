@@ -15,8 +15,15 @@
 					<div class="row event_container" v-if="showMore > index" v-for="(promo,index) in promos">		
 						<div class="col-sm-6 col-md-4 event_image_container">
 							<!--<router-link :to="'/jobs/'+ promo.slug" class="event_learn_more">-->
-								<img :src="promo.store.store_front_url_abs"  class="event_image image" :alt="'Click here to view ' + promo.name"/>
+								<!--<img :src="promo.store.store_front_url_abs"  class="event_image image" :alt="'Click here to view ' + promo.name"/>-->
 							<!--</router-link>-->
+							<div v-if="promo.store.no_store_logo" class="store_details_image center-block">
+                                    <div class="no_logo">
+                                        <img class="store_img" src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" alt="">
+                                        <h2 class="store_details_name">{{ promo.store.name }}</h2>
+                                    </div>    
+                                </div>
+                                <img v-else class="store_details_image center-block" :src="promo.store.store_front_url_abs" :alt="promo.store.name + ' Logo'" />
 						</div>
 						<div class="col-sm-6 col-md-8 event_dets_container">
 							<h4 class="event_name caps"  v-if="locale=='en-ca'">{{promo.name}}</h4>
