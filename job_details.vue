@@ -12,8 +12,15 @@
 		<div class="site_container">
 			<div class="row">
 				<div class="col-sm-4 promo_logo_container hidden_phone">
-					<div class="image_container">
-						<img v-lazy="currentJob.store.store_front_url_abs" class="image" :alt="currentJob.name"/>
+					<div class="image_container details_store_image">
+						<!--<img v-lazy="currentStore.store_front_url_abs" class="image"/>-->
+						<div v-if="currentJob.store.no_store_logo" class="store_details_image center-block">
+                            <div class="no_logo">
+                                <img class="store_img" src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" alt="">
+                                <h2 class="store_details_name">{{ currentJob.store.name }}</h2>
+                            </div>    
+                        </div>
+                        <img v-else class="store_details_image center-block" :src="currentJob.store.store_front_url_abs" :alt="currentJob.store.name + ' Logo'" />
 					</div>
 					<div class="text-center" v-if="currentJob.store.name">
 					    <div v-if="currentJob.jobable_type == 'Store'">
