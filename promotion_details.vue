@@ -52,7 +52,7 @@
 					<div class="row">
     					<div v-if="currentPromo.promotionable_type == 'Store'" class="visible_phone">
     					    <h4 class="event_store_name caps" v-if="locale=='fr-ca'">{{currentPromo.store.name_2}}</h4>
-    					    <h4 class="event_store_name caps" v-else>{{procurrentPromomo.store.name}}</h4>
+    					    <h4 class="event_store_name caps" v-else>{{currentPromo.store.name}}</h4>
     					</div>
 						<p class="promo_div_date pull-left">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
 						<social-sharing :url="$root.shareURL('promotions',currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="_.truncate(currentPromo.description, {'length': 99})" twitter-user="BCCstyle" :media="currentPromo.image_url" inline-template >
