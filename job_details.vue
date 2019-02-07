@@ -116,13 +116,13 @@
                         //     this.currentJob.store = {};
                         //     this.currentJob.store.store_front_url_abs =  this.property.default_logo_url;
                         // }
-                        if (this.currentPromo.store  && _.includes(this.currentPromo.store.store_front_url_abs, 'missing')) {
+                        if (this.currentJob.store  && _.includes(this.currentJob.store.store_front_url_abs, 'missing')) {
                             // this.currentPromo.store.store_front_url_abs = this.property.default_logo_url;
-                            this.currentPromo.store.no_store_logo = true;
+                            this.currentJob.store.no_store_logo = true;
                         }
-                        else if (!this.currentPromo.store) {
-                            this.currentPromo.store = {};
-                            this.currentPromo.store.store_front_url_abs = this.property.default_logo_url;
+                        else if (!this.currentJob.store) {
+                            this.currentJob.store = {};
+                            this.currentJob.store.store_front_url_abs = this.property.default_logo_url;
                         }
                         var vm = this;
                         var temp_job = [];
