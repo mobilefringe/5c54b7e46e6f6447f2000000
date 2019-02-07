@@ -155,7 +155,7 @@
                     smallerHeader: false,
                     isSticky: 200,
                     toggleVar: false,
-                    showMobileSearch: true
+                    showMobileSearch: false
                 }
             },
             watch: {
