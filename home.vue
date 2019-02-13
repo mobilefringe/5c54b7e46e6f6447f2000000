@@ -120,9 +120,9 @@
                 ]),
                 banners () { 
                     var banners = this.$store.state.banners;
-                     _.forEach(banners, function(banner, key) {
-                        banner.image_url = banner.image_url = "https://picsum.photos/1920/600?image=52"+key;
-                    })
+                    //  _.forEach(banners, function(banner, key) {
+                    //     banner.image_url = banner.image_url = "https://picsum.photos/1920/600?image=52"+key;
+                    // })
                     return _.orderBy(banners, ['position'], ['asc']);
                 },
                 feature_items () {
@@ -132,15 +132,15 @@
                       
                         if( _.includes([0,6], key) ) {
                             value.masonry_class = "grid-item--height2";
-                            value.image_url = "https://picsum.photos/570/1140?image=98"+key;
+                            // value.image_url = "https://picsum.photos/570/1140?image=98"+key;
                         }
                         else if ( _.includes([2,5], key) ){
                             value.masonry_class = "grid-item--width2";
-                            value.image_url = "https://picsum.photos/1140/570?image=97"+key;
+                            // value.image_url = "https://picsum.photos/1140/570?image=97"+key;
                         }
                         else {
                             value.masonry_class = " ";
-                            value.image_url = "https://picsum.photos/570/570?image=88"+key;
+                            // value.image_url = "https://picsum.photos/570/570?image=88"+key;
                         }
                         if(value.name === null || value.name === undefined || value.name.length == 0) {
                             value.no_hover_class = false;
