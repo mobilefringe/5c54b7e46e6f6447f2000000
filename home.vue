@@ -174,16 +174,18 @@
                             value.masonry_class = " ";
                         }
                         
-                        if(key > 7) {
-                            value.mobile_order = key + 2;
+                        // if(key > 7) {
+                        //     value.mobile_order = key + 2;
+                        // }
+                        // else {
+                        //     value.mobile_order = key + 1;
+                        // }
+                        if(key == 1) {
+                            value.mobile_order = 6;
                         }
-                        else {
-                            value.mobile_order = key + 1;
+                        if(key == 6) {
+                            value.mobile_order = 1;
                         }
-                        if(key == 8) {
-                            value.mobile_order = 7;
-                        }
-                        
                         if( _.includes(value.url, '//')) {
                             value.do_anchor_tag = true;
                         }
