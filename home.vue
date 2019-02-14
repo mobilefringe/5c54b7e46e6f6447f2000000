@@ -186,6 +186,10 @@
                         else if(key == 6) {
                             value.mobile_order = 1;
                         }
+                          else {
+                            value.mobile_order = key + 1;
+                        }
+                        
                         if( _.includes(value.url, '//')) {
                             value.do_anchor_tag = true;
                         }
