@@ -183,7 +183,7 @@
                         if(key == 1) {
                             value.mobile_order = 6;
                         }
-                        if(key == 6) {
+                        else if(key == 6) {
                             value.mobile_order = 1;
                         }
                         if( _.includes(value.url, '//')) {
