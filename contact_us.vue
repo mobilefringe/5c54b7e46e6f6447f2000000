@@ -61,7 +61,6 @@
             <div style="padding-top: 40px;"></div>    
         </div>
         <div style="margin-bottom:-40px">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21962.843884082038!2d-80.946021!3d46.52086700000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2f009c298d2b89%3A0x3406bb16697f5ee6!2s1349+Lasalle+Blvd%2C+Sudbury%2C+ON+P3A+1Z2%2C+Canada!5e0!3m2!1sen!2sus!4v1549389629749" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2745.3494613973985!2d-80.94883259866725!3d46.52098622022416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2f009dd6b06c91%3A0x2417d89f78cf8ddb!2sNew+Sudbury+Centre!5e0!3m2!1sen!2sca!4v1550257072692" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
