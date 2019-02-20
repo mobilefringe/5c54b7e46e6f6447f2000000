@@ -180,7 +180,7 @@
                 checkImageURL(value) {
                     if (_.includes(value.image_url, "missing")) {
                         if (value.store === null || value.store === undefined) {
-                            return "https://www.mallmaverick.com/system/site_images/photos/000/044/637/original/default_logo.png?1539618404";
+                            return this.property.default_logo_url;
                         } else if (
                             value.store != null &&
                             value.store != undefined &&
