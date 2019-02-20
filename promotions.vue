@@ -186,7 +186,7 @@
                             value.store != undefined &&
                             _.includes(value.store.store_front_url_abs, "missing")
                         ) {
-                            return this.property.default_logo_url;
+                            return null;
                         } else {
                             return value.store.store_front_url_abs;
                         }
