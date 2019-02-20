@@ -186,7 +186,7 @@
                             value.store != undefined &&
                             _.includes(value.store.store_front_url_abs, "missing")
                         ) {
-                            return "https://www.mallmaverick.com/system/site_images/photos/000/044/637/original/default_logo.png?1539618404";
+                            return this.property.default_logo_url;
                         } else {
                             return value.store.store_front_url_abs;
                         }
