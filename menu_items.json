@@ -52,6 +52,10 @@
                 "href": "/pages/sudburycentre-mall-walk-program"
             },
             {
+                "name": "header.community_support",
+                "href": "/pages/sudburycentre-mall-walk-program"
+            },
+            {
                 "name": "header.code_conduct",
                 "href": "https://www.mallmaverick.com/system/site_images/photos/000/048/948/original/NSC_CODE_OF_CONDUCT.pdf?1549386608",
                 "external" : true
