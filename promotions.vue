@@ -23,7 +23,7 @@
                                         <h2 class="store_details_name">{{ promo.store.name }}</h2>
                                     </div>    
                                 </div>
-                                <img v-else class="store_details_image center-block" :src="checkImageURL(promo)" :alt="promo.store.name + ' Logo'" />
+                                <img v-else class="store_details_image center-block" :src="checkImageURL(promo)" :alt="promo.name" />
                                 </div>
     						</div>
 						<div class="col-sm-6 col-md-8 event_dets_container">
