@@ -20,7 +20,14 @@
             		    <div class="col-sm-6 col-md-4 event_image_container">
 							<!--<router-link :to="'/events/'+ promo.slug" class="event_learn_more">-->
 							<div class="image_container details_store_image">
-							    <img :src="promo.store.store_front_url_abs"  class="event_image image" :alt="'Click here to view ' + promo.name"/>
+							    <!--<img :src="promo.store.store_front_url_abs"  class="event_image image" :alt="'Click here to view ' + promo.name"/>-->
+							    <div v-if="!checkImageURL(promo)" class="store_details_image center-block">
+                                    <div class="no_logo">
+                                        <img class="store_img" src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" alt="">
+                                        <h2 class="store_details_name">{{ promo.store.name }}</h2>
+                                    </div>    
+                                </div>
+                                <img v-else class="center-block" :src="checkImageURL(promo)" :alt="promo.name" />
 							</div>
 							<!--</router-link>-->
 						</div>
