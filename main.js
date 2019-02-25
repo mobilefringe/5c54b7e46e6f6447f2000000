@@ -98,8 +98,8 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 this.locale = "en-ca";
                 this.property.default_logo_url = "//codecloud.cdn.speedyrails.net/sites/5c54b7e46e6f6447f2000000/image/jpeg/1549475208485/new_sudbury_black.jpg";
                 var vm = this;
-                setTimeout(function(){ alert("Hello"); }, 3000);
-                this.dataLoaded = true;
+                setTimeout(function(){ vm.dataLoaded = true; }, 200);
+                
                 
             });
             window.addEventListener('scroll', this.enableStickyNavbar);
