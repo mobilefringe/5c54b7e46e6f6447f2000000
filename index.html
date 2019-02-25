@@ -40,13 +40,13 @@
 	    {%raw-%} 
     		<div id="app" v-cloak>
     			<loader v-if="!dataLoaded"></loader>
-    			<div class="main_content_container" v-if="dataLoaded">
+    			<!--<div class="main_content_container" v-if="dataLoaded">-->
     			    <h1 style="display:none;">{{property.name}}</h1>
-    			    <header-component></header-component>
+    			    <header-component  v-if="dataLoaded"></header-component>
     				<transition name="custom-classes-transition" enter-active-class="fadeIn">
-    					<router-view class="router_content" :locale="locale"></router-view>
+    					<router-view class="router_content" :locale="locale"  v-if="dataLoaded"></router-view>
     				</transition>
-    				<div class="home_subscription hidden_phone">
+    				<div class="home_subscription hidden_phone"  v-if="dataLoaded">
                         <div class="subscribeBlog content_container">
                              <h2 class="stay_update caps">{{$t("footer.stay_uptodate")}}</h2> 
                              <div id="newsletterBlogForm">
@@ -95,7 +95,7 @@
     						</div>
     					</div>
     				</div>
-    			</div>
+    			<!--</div>-->
     		</div>
     		<div class='modal-backdrop custom_backdrop hidden_now' id="popup_backdrop"></div>
 		{%endraw-%} 
