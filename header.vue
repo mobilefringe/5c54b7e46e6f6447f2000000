@@ -64,7 +64,12 @@
                                                 </b-card-header>
                                                 <b-collapse v-model="item.show_sub_menu" :id="$t(item.name)" :visible="item.show_sub_menu" accordion="my-accordion" role="tabpanel" class="accordion_body">
                                                     <b-card-body v-for="sub_menu in item.sub_menu">
-                                                        <p class="card-text" @click="closeMobileMenu()"><router-link :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link></p>
+                                                        <p class="card-text" @click="closeMobileMenu()">
+                                                            <!--<router-link :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link>-->
+                                                            <a v-if="sub_menu.external" :href="sub_menu.href" target="_blank">{{$t(sub_menu.name)}}</a>
+                    						                <router-link v-else-if="!sub_menu.router_name" :to="sub_menu.href">{{$t(sub_menu.name)}}</router-link>
+                    						                <router-link v-else :to="{name : sub_menu.router_name, params: { new_store: sub_menu.prop }, query:{new_store: 'new_store'}} ">{{$t(sub_menu.name)}}</router-link>
+                                                        </p>
                                                     </b-card-body>
                                                 </b-collapse>
                                             </b-card>
