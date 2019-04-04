@@ -11,7 +11,6 @@
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
                     <form  class="form-horizontal js-cm-form" id="subForm" action="https://mobilefringe.createsend.com/t/d/s/wtdlhj/" method="post">
-                    id="subForm" action="form-submit" v-on:submit.prevent="validateBeforeSubmit"
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" >
                                 <label class="label" for="cm-name">{{$t("newsletter_page.name")}}</label>
@@ -37,16 +36,16 @@
                         </div>
                     </form>
                     
-                    <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
-                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                        <span class="sr-only">{{$t("newsletter_page.success")}} : </span>
-                        {{$t("newsletter_page.thank_you_message")}}
-                    </div>
-                    <div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">
-                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                        <span class="sr-only">{{$t("newsletter_page.error")}} : </span>
-                        {{$t("newsletter_page.error_message")}}
-                    </div>
+                    <!--<div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">-->
+                    <!--    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>-->
+                    <!--    <span class="sr-only">{{$t("newsletter_page.success")}} : </span>-->
+                    <!--    {{$t("newsletter_page.thank_you_message")}}-->
+                    <!--</div>-->
+                    <!--<div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">-->
+                    <!--    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>-->
+                    <!--    <span class="sr-only">{{$t("newsletter_page.error")}} : </span>-->
+                    <!--    {{$t("newsletter_page.error_message")}}-->
+                    <!--</div>-->
                     
                 </div>
             </div>
