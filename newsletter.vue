@@ -10,8 +10,8 @@
         <div class="site_container">
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
-                    <!--<form  class="form-horizontal js-cm-form" action="https://mobilefringe.createsend.com/t/d/s/gmdyi/" method="post">-->
-                    <!--id="subForm" action="form-submit" v-on:submit.prevent="validateBeforeSubmit"-->
+                    <form  class="form-horizontal js-cm-form" action="https://mobilefringe.createsend.com/t/d/s/gmdyi/" method="post">
+                    id="subForm" action="form-submit" v-on:submit.prevent="validateBeforeSubmit"
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" >
                                 <label class="label" for="cm-name">{{$t("newsletter_page.name")}}</label>
@@ -19,7 +19,7 @@
                             </div>
                             <div class="col-sm-6 col-xs-12">
                                 <label class="label" for="newsletter_email">{{$t("newsletter_page.email")}}</label>
-                                <input v-model="form_data.email" required class="form-control js-cm-email-input" name="cm-gmdyi-gmdyi" type="email" placeholder="Email" id="newsletter_email">
+                                <input v-model="form_data.email" required class="form-control js-cm-email-input" name="cm-wtdlhj-wtdlhj" type="email" placeholder="Email" id="newsletter_email">
                             </div>
                         </div>
                         <div class="form-group">
@@ -35,7 +35,7 @@
                                 <button class="contest_btn" type="submit" :disabled="formSuccess">{{$t("newsletter_page.subscribe")}}</button>
                             </div>
                         </div>
-                    <!--</form>-->
+                    </form>
                     
                     <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
