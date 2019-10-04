@@ -100,7 +100,10 @@
                     return ordered_hours;
                 },
                 holidayHours () {
-                    return this.getPropertyHolidayHours;
+                    // return this.getPropertyHolidayHours;
+                    var holidayHours = this.getPropertyHolidayHours;
+                    console.log(holidayHours)
+                    
                     return _.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.holiday_date; }]);
                 },
                 reducedHolidays () {
@@ -108,7 +111,7 @@
                     return _.filter(holidayHours, function(o) { return !o.is_closed; });
                 },
                 closeHolidays () {
-                    var holidayHours = this.holidayHours;
+                    // var holidayHours = this.holidayHours;
                     return _.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.holiday_date; }]);
                 }
             },
