@@ -104,7 +104,7 @@
                     var holidayHours = this.getPropertyHolidayHours;
                     console.log(holidayHours)
                     
-                    return _.sortBy(_.filter(holidayHours, function(o) { return o.is_closed; }), [function(o) { return o.holiday_date; }]);
+                    return _.sortBy(_.filter(holidayHours, function(o) { return o.holiday_date; }), [function(o) { return o.holiday_date; }]);
                 },
                 reducedHolidays () {
                     var holidayHours = this.holidayHours;
