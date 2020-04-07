@@ -1,7 +1,6 @@
 <template>
 	<div class="page_container store_dets_container" v-if="dataLoaded" id="store_dets_container">
 		<div class="page_header" v-if="pageBanner" v-lazy:background-image="pageBanner.image_url">
-			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content">
 					<h1>{{$t("stores_page.shopping")}}</h1>
@@ -12,7 +11,6 @@
 			<div class="row">
 				<div class="col-sm-4 promo_logo_container hidden_phone">
 					<div class="image_container details_store_image">
-						<!--<img v-lazy="currentStore.store_front_url_abs" class="image"/>-->
 						<div v-if="currentStore.no_store_logo" class="store_details_image center-block">
                             <div class="no_logo">
                                 <img class="store_img" src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" alt="">
@@ -24,7 +22,6 @@
 				</div>
 				<div class="col-sm-8 promo_image_container text-left">
 					<div class="col-sm-12 no_padding">
-						<!--<png-map ref="pngmapref" v-bind:png-map-url="getPNGurl" :initial-position="'1250 1250'" :height="_.toNumber('625')" @updateMap="updatePNGMap"></png-map>-->
 						<mapplic-map ref="mapplic_ref" :height="358" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="mapStores" :floorlist="floorList" tooltiplabel="View Store Details" @updateMap="updateSVGMap"></mapplic-map>
 					</div>
 				</div>
