@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<div class="site_container page_content" id="events_container">
-			<div  v-if="promotions.length > 0">
+			<div v-if="promotions.length > 0">
 				<div class="row event_container" v-if="showMore > index" v-for="(promo,index) in promos">		
 					<div class="col-sm-6 col-md-4 event_image_container">
 						<div class="image_container details_store_image">
