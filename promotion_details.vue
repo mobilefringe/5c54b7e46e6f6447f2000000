@@ -1,7 +1,6 @@
 <template>
 	<div class="promo_dets_container" v-if="currentPromo">
 		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content caps">
 					<h1>{{$t("promos_page.promotions")}}</h1>
@@ -13,14 +12,10 @@
 		<div class="site_container">
 			<div class="row">
 				<div class="col-sm-4 promo_logo_container hidden_phone">
-					<!--<div class="image_container">-->
-					<!--	<img v-if="currentPromo.store" :src="currentPromo.store.store_front_url_abs" class="image" :alt="currentPromo.store.name+' Logo'"/>-->
-					<!--</div>-->
 					<div class="image_container details_store_image">
-						<!--<img v-lazy="currentStore.store_front_url_abs" class="image"/>-->
 						<div v-if="currentPromo.store.no_store_logo" class="store_details_image center-block">
                             <div class="no_logo">
-                                <img class="store_img" src="//www.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" alt="">
+                                <img class="store_img" src="//assets.mallmaverick.com/system/site_images/photos/000/041/782/original/transparent_logo.png?1533845225" alt="">
                                 <h2 class="store_details_name">{{ currentPromo.store.name }}</h2>
                             </div>    
                         </div>
