@@ -10,6 +10,22 @@
         <div class="site_container">
             <div class="row"> 
                 <div class="col-md-12 contact_contents">
+                    <div>
+                    	<h1 color="#000"></h1>
+                    	<form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A95AC82FD698DF2D6FDE88EA945BF5C499537D6EF8F8B4C617D69E1D132B996B316952D0CBA9B5B4F886DE9B652578C75">
+                    		<div>
+                    			<div><label>Name </label><input aria-label="Name" id="fieldName" maxlength="200" name="cm-name"></div>
+                    			<div><label>Email </label><input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-wtdlhj-wtdlhj" required="" type="email"></div>
+                    			<div>
+                    				<div>
+                    					<div><input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox"><label for="cm-privacy-consent">I agree to be emailed</label></div>
+                    					<input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true">
+                    				</div>
+                    			</div>
+                    		</div>
+                    		<button type="submit" class="contest_btn">Subscribe</button>
+                    	</form>
+                    </div>
                     <!--<form  class="form-horizontal js-cm-form" id="subForm" action="https://mobilefringe.createsend.com/t/d/s/wtdlhj/" method="post">
                         <div class="form-group ">
                             <div class="col-sm-6 col-xs-12" >
