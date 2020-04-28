@@ -18,7 +18,7 @@
                         			<label>Name </label>
                         			<input aria-label="Name" id="fieldName" maxlength="200" name="cm-name" class="form-control"></div>
                     			<div>
-                        			<label>Email </label>
+                        			<label for="cm-wtdlhj-wtdlhj" class="label">Email </label>
                         			<input autocomplete="Email" aria-label="Email" class="form-control js-cm-email-input qa-input-email form-control" id="fieldEmail" maxlength="200" name="cm-wtdlhj-wtdlhj" required="" type="email">
                         		</div>
                     			<div class="form-group">
