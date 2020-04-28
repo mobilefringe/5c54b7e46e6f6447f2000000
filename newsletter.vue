@@ -19,7 +19,7 @@
                         			<input aria-label="Name" id="fieldName" maxlength="200" name="cm-name" class="form-control"></div>
                     			<div>
                         			<label>Email </label>
-                        			<input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email form-control" id="fieldEmail" maxlength="200" name="cm-wtdlhj-wtdlhj" required="" type="email">
+                        			<input autocomplete="Email" aria-label="Email" class="form-control js-cm-email-input qa-input-email form-control" id="fieldEmail" maxlength="200" name="cm-wtdlhj-wtdlhj" required="" type="email">
                         		</div>
                     			<div class="form-group">
                                     <div class="col-xs-12">
