@@ -14,10 +14,10 @@
                     	<h1 color="#000"></h1>
                     	<form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A95AC82FD698DF2D6FDE88EA945BF5C499537D6EF8F8B4C617D69E1D132B996B316952D0CBA9B5B4F886DE9B652578C75">
                     		<div>
-                    			<div>
-                    			    <div>
-                        			<label for="cm-name" class="label">Name</label>
-                        			<input aria-label="Name" id="fieldName" maxlength="200" name="cm-name" class="form-control">
+                    			<div class="form-group ">
+                                    <div class="col-sm-6 col-xs-12" >
+                            			<label for="cm-name" class="label">Name</label>
+                            			<input aria-label="Name" id="fieldName" maxlength="200" name="cm-name" class="form-control">
                         			    
                         			</div>
                         		</div>
